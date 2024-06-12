@@ -10,21 +10,71 @@ Image classification on five venues with regarding of three different models
 
 ## Dataset
 
-In terms of dataset, we use a subset of the [MIT Places365 dataset](https://www.kaggle.com/datasets/mittalshubham/images256/data) which contains 5150 pictures of 5 classes out of 365 classes from the original dataset. (For the original MIT Places365 dataset, see: [The Original Dataset](https://www.kaggle.com/datasets/mittalshubham/images256/data)) This dataset consists of 365 classes of different scene-centric pictures that all contain representative features of various locations. All the images are JPEG color images and resized to 256x256 resolution. With consideration of robustness and fitness, the five classes chosen from the original dataset are general, representative locations with specific features. The five classes are:
+In terms of dataset, we use a subset of the [MIT Places365 dataset](https://www.kaggle.com/datasets/mittalshubham/images256/data) which contains 5893 pictures of 5 classes out of 365 classes from the original dataset. (For the original MIT Places365 dataset, see: [The Original Dataset](https://www.kaggle.com/datasets/mittalshubham/images256/data)) This dataset consists of 365 classes of different scene-centric pictures that all contain representative features of various locations. All the images are JPEG color images and resized to 256x256 resolution. With consideration of robustness and fitness, the five classes chosen from the original dataset are general, representative locations with specific features. The five classes are:
 
-- **homeOffice** (1346/5150)
-- **hotelRoom** (1524/5150)
-- **church** (797/5150)
-- **museum** (760/5150)
-- **supermarket** (1466/5150)
+- **homeOffice** (1346/5893)
+- **hotelRoom** (1524/5893)
+- **church** (798/5893)
+- **museum** (761/5893)
+- **supermarket** (1466/5893)
 
-For better performance from the classifier, every sampled image is taken from real life, including people or all possible surroundings, so that the model could possibly be more robust. In our dataset, the quantities of all five classes are balanced, with each class containing 700 images, and are divided into training and testing images in an 8:2 ratio. Our dataset is finally presented as follows:
+We also randomly extract 700 images from each of the class to make a blanced dataset to do a comparison analysis against the original dataset. For both datasets, images are divided into training and testing images in an 8:2 ratio. The balanced dataset is prenented as follows:
 
 - **homeOffice** (700/3500)
 - **hotelRoom** (700/3500)
 - **church** (700/3500)
 - **museum** (700/3500)
 - **supermarket** (700/3500)
+
+
+## Installing the required dependencies and modules
+
+```
+pip install -r requirements.txt
+```
+
+### How to train model
+
+1. **Clone the repository:**
+
+```
+git clone git@github.com:itshisher/COMP6721_Summer2024_Course_Project.git
+```
+
+2. **Setting Up an Environment:**
+
+```
+pip install torch
+```
+```
+pip install torchvision
+```
+
+3. **Launch Jupyter Notebook:**
+
+```
+jupyter notebook
+```
+
+4. **Open and run the notebooks:**
+   - Navigate to the directory called **COMP6721_Summer2024_Course_Project** in the Jupyter Notebook interface.
+   - Choose one of the two folders (CNN, Desicion Tree) to continue. 
+   - Select and run the notebook under the folder by clicking the "Run" button or using "Shift + Enter".
+  
+5. **Saved models:**
+   - Saved models from **best_model_fold_1.pth** to **best_model_fold_10.pth** are runned by the file **Supervised_CNN_OriginalDataset_Transform_BS64_Epoch20_10foldCV_0.74.ipynb**
+   - The saved model **best_model.pth** is runned by the file **Supervised_CNN_OriginalDataset_Transform_BS64_Epoch20_0.71.ipynb**
+   - All models are available at the following link:
+   ```
+   https://drive.google.com/drive/folders/1NfSKp3qYk4uu6YsoAc2_uo4fIcsXbaWg?usp=sharing
+   ```
+
+**Notes:**
+
+- All libraries used are mentiond at the beginning of each jupyter notebook file.
+- The tested datasets are available under the main directory, which are called **original_dataset** and **balanced_dataset**.
+- The project proposal and reports for two phases can be viewed under the main directory as well. 
+
 
 ## Methodology
 
