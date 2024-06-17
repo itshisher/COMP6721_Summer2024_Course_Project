@@ -37,43 +37,68 @@ pip install -r requirements.txt
 
 1. **Clone the repository:**
 
-```
-git clone git@github.com:itshisher/COMP6721_Summer2024_Course_Project.git
-```
+   ```
+   git clone git@github.com:itshisher/COMP6721_Summer2024_Course_Project.git
+   ```
 
 2. **Setting Up an Environment:**
 
-```
-pip install torch
-```
-```
-pip install torchvision
-```
+   ```
+   pip install torch
+   ```
+   ```
+   pip install torchvision
+   ```
 
 3. **Launch Jupyter Notebook:**
 
-```
-jupyter notebook
-```
+   ```
+   jupyter notebook
+   ```
 
 4. **Open and run the notebooks:**
    - Navigate to the directory called **COMP6721_Summer2024_Course_Project** in the Jupyter Notebook interface.
    - Choose one of the two folders (CNN, Desicion Tree) to continue. 
    - Select and run the notebook under the folder by clicking the "Run" button or using "Shift + Enter".
   
-5. **Saved models:**
-   - Saved models from **best_model_fold_1.pth** to **best_model_fold_10.pth** are runned by the file **Supervised_CNN_OriginalDataset_Transform_BS64_Epoch20_10foldCV_0.74.ipynb**
-   - The saved model **best_model.pth** is runned by the file **Supervised_CNN_OriginalDataset_Transform_BS64_Epoch20_0.71.ipynb**
-   - All models are available at the following link:
-   ```
-   https://drive.google.com/drive/folders/1NfSKp3qYk4uu6YsoAc2_uo4fIcsXbaWg?usp=sharing
-   ```
 
 **Notes:**
 
 - All libraries used are mentiond at the beginning of each jupyter notebook file.
 - The tested datasets are available under the main directory, which are called **original_dataset** and **balanced_dataset**.
 - The project proposal and reports for two phases can be viewed under the main directory as well. 
+   
+### How to use models to predict results
+
+1. **Download the file on Google Drive:**
+   
+   ```
+   https://drive.google.com/drive/folders/1O3fREz320y2PMRKkT5_gcc6EmqLNx1rI?usp=sharing
+   ```
+
+2. **Setting Up an Environment:**
+
+   ```
+   pip install torch
+   ```
+   ```
+   pip install torchvision
+   ```
+   ```
+   pip install joblib
+   ```
+
+3. **Launch Jupyter Notebook:**
+   - Navigate to the directory called **Sample test**.
+   - Select and run the notebook **test_all_three_models.ipynb** under the folder by clicking the "Run" button or using "Shift + Enter".
+   - All libraries are provided on the top of the file.
+
+**Notes:**
+
+   - All libraries used are mentiond at the beginning of each jupyter notebook file.
+   - A sample small test dataset available under the main directory, which are called **test_dataset**.
+   - Saved models are provided under the same directory. 
+
 
 
 ## Methodology
