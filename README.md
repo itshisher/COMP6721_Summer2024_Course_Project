@@ -27,13 +27,7 @@ We also randomly extract 700 images from each of the class to make a blanced dat
 - **supermarket** (700/3500)
 
 
-## Installing the required dependencies and modules
-
-```
-pip install -r requirements.txt
-```
-
-### How to train model
+## How to train the models
 
 1. **Clone the repository:**
 
@@ -66,9 +60,10 @@ pip install -r requirements.txt
 
 - All libraries used are mentiond at the beginning of each jupyter notebook file.
 - The tested datasets are available under the main directory, which are called **original_dataset** and **balanced_dataset**.
-- The project proposal and reports for two phases can be viewed under the main directory as well. 
+- The project proposal and reports for two phases can be viewed under the main directory as well.
+
    
-### How to use models to predict results
+## How to use models to predict results
 
 1. **Download the file on Google Drive:**
    
@@ -89,9 +84,14 @@ pip install -r requirements.txt
    ```
 
 3. **Launch Jupyter Notebook:**
+
+   ```
+   jupyter notebook
+   ```
+   
+4. **Open and run the notebooks:**
    - Navigate to the directory called **Sample test**.
    - Select and run the notebook **test_all_three_models.ipynb** under the folder by clicking the "Run" button or using "Shift + Enter".
-   - All libraries are provided on the top of the file.
 
 **Notes:**
 
